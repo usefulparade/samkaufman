@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Sam Kaufman</title>
+    <meta name="description" content="Coso Hot Springs, a thesis by Sam Kaufman">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/p5.min.js"></script>
+    <script src="js/p5.dom.min.js"></script>
+    <script src="js/sam.js"></script>
+</head>
+
+<body>
+  <div class="bg" id="bg"></div>
+
+  <div class="top"> 
+      <h1 style="float: left;">SAM KAUFMAN</h1>
+      <h1 style="float: right;">COSO HOT SPRINGS</h1>
+      <div class="nav">
+        <p></p>
+      </div>
+  </div>
+    
+    <div class="main-column">
+      
+      <div class="content">
+        <div class="twitch-embed responsive" id="twitch-embed"></div>
+
+          <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+          <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+          <script type="text/javascript">
+            new Twitch.Player("twitch-embed", {
+              channel: "saladkansas"
+            });
+          </script>
+      </div>
+            
+    </div>
+
+    
+</body>
