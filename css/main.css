@@ -8,7 +8,7 @@ body {
    font-size: 24px;
    width: 100%;
    font-family: "Times New Roman", serif; 
-   background-image: url("/img/mold_bg.jpg");
+   background-image: url("img/mold_bg.jpg");
    /* background-size: cover; */
    background-size: 33%;
    background-repeat: repeat;
@@ -223,7 +223,7 @@ img.bg-triple {
         width: 60%;
         top: 100px;
         right: 2%;
-        max-height: 300px;
+        max-height: 0px;
         overflow: scroll;
         background: white;
         padding: 5px;
