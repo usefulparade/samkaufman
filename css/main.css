@@ -99,6 +99,24 @@ img.bg-triple {
     line-height: auto;
 }
 
+.thesis {
+    display: block;
+    position: absolute;
+    width: 40%;
+    top: 100px;
+    right: 10%;
+    max-height: 0px;
+    overflow: scroll;
+    background: white;
+    /* padding: 5px; */
+    transition: max-height 0.2s;
+}
+
+.thesis p {
+    margin: 5px;
+
+}
+
 .main-column {
     padding-top: 75px;
     padding-left: 10%;
@@ -122,7 +140,7 @@ img.bg-triple {
     transition: transform 0.2s;
 }
 .twitch-embed:hover {
-    transform: skew(-5deg);
+    transform: skew(-2deg);
 }
 
 .responsive {
@@ -179,7 +197,7 @@ img.bg-triple {
     display: inline-block;
     width: 100%;
     height: 400px;
-    transform: skew(-4deg);
+    transform: skew(-2deg);
 }
 
 
@@ -197,5 +215,17 @@ img.bg-triple {
 
     .nav {
         left: 2%;
+    }
+
+    .thesis {
+        display: block;
+        position: absolute;
+        width: 60%;
+        top: 100px;
+        right: 2%;
+        max-height: 300px;
+        overflow: scroll;
+        background: white;
+        padding: 5px;
     }
 }
