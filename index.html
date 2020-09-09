@@ -12,14 +12,44 @@
     <script src="js/sam.js"></script>
 </head>
 
-<body>
-  <div class="bg" id="bg"></div>
+<body class="body" id="top">
+  
+  
+  
+  <div class="bg" id="bg">
+    <img class="bg-img" src="img/midterm_poster_bg.jpg">
+    <!-- <img class="bg-triple" src="img/mold_bg.jpg">
+    <img class="bg-triple" src="img/mold_bg.jpg">
+    <img class="bg-triple" src="img/mold_bg.jpg">
+    <img class="bg-triple" src="img/mold_bg.jpg">
+    <img class="bg-triple" src="img/mold_bg.jpg">
+    <img class="bg-triple" src="img/mold_bg.jpg">
+    <img class="bg-triple" src="img/mold_bg.jpg">
+    <img class="bg-triple" src="img/mold_bg.jpg">
+    <img class="bg-triple" src="img/mold_bg.jpg"> -->
+    <!-- <div class="bg-row"> -->
+      <!-- <img class="bg-img" src="img/mold_bg.jpg"> -->
+      <!-- <img class="bg-img" src="img/mold_bg.jpg">
+      <img class="bg-img" src="img/mold_bg.jpg"> -->
+    <!-- </div> -->
+  </div>
+  <img class="top-left" src="img/top_left.jpg">
+  <img class="top-right" src="img/top_right.jpg">
+  <div class="path">
+    <img src="img/path/01.jpg"> 
+    <img src="img/path/02.jpg"> 
+    <img src="img/path/03.jpg"> 
+    <img src="img/path/04.jpg"> 
+    <img src="img/path/05.jpg"> 
+  </div>
 
   <div class="top"> 
-      <h1 style="float: left;">SAM KAUFMAN</h1>
+      <h1 style="float: left;"><a href="#top">SAM KAUFMAN</a></h1>
       <h1 style="float: right;">COSO HOT SPRINGS</h1>
       <div class="nav">
-        <p></p>
+        <p><a href="#twitch-embed">twitch</a></p>
+        <p><a href="#images">images</a></p>
+        <p><a href="#pdf">pdf</a></p>
       </div>
   </div>
     
@@ -28,16 +58,30 @@
       <div class="content">
         <div class="twitch-embed responsive" id="twitch-embed"></div>
 
-          <script src="https://player.twitch.tv/js/embed/v1.js"></script>
-          <!-- Create a Twitch.Player object. This will render within the placeholder div -->
-          <script type="text/javascript">
-            new Twitch.Player("twitch-embed", {
-              channel: "saladkansas"
-            });
-          </script>
+         <div class="images" id="images">
+           <img loading="lazy" src="img/digital-rendering/hotel_01.png">
+           <img loading="lazy" src="img/digital-rendering/hotel_02.png">
+           <img loading="lazy" src="img/digital-rendering/hotel_03.png">
+           <img loading="lazy" src="img/digital-rendering/hotel_04.png">
+           <img loading="lazy" src="img/digital-rendering/hotel_05.png">
+           <img loading="lazy" src="img/digital-rendering/hotel_06.png">
+         </div> 
+
+        
+        <div class="pdf" id="pdf">
+          <iframe src="img/pdf/Temporary_Visitor_Restrictions_and_Guidelines.pdf#zoom=page-fit"></iframe>
+        </div>
       </div>
             
     </div>
 
+
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+    <script type="text/javascript">
+      new Twitch.Player("twitch-embed", {
+        channel: "saladkansas"
+      });
+    </script>
     
 </body>

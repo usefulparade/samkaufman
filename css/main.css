@@ -1,33 +1,84 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
    margin: 0px;
    padding: 0px;
    font-size: 24px;
    width: 100%;
-   font-family: "Times New Roman", serif;
+   font-family: "Times New Roman", serif; 
+   background-image: url("/img/mold_bg.jpg");
+   /* background-size: cover; */
+   background-size: 33%;
+   background-repeat: repeat;
+   
 }
 
 h1 {
     font-size: 1em;
     font-weight: 100;
+    margin: 0px;
 }
 
 .bg {
     display: block;
     position: fixed;
+    top: 0;
+    min-width: 500px;
     width: 100%;
-    height: 100%;
-    background-image: url("/img/midterm_poster_bg.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    /* height: 100%; */
+    overflow: hidden;
+    font-size: 0;
+}
+
+img.bg-img {
+    display: inline-block;
+    position: relative;
+    min-width: 500px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    /* height: 100%; */
+    /* background-image: url("/img/midterm_poster_bg.jpg"); */
+    /* background-repeat: no-repeat;
+    background-size: 100%; */
+}
+
+img.bg-triple {
+    display: inline-block;
+    position: relative;
+    width: 33%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.top-left {
+    display: block;
+    position: absolute;
+    width: 20%;
+    top: 0;
+    left: 0;
+}
+
+.top-right {
+    display: block;
+    position: absolute;
+    width: 20%;
+    top: 0;
+    right: 0;
 }
 
 .top {
     display: block;
     position: fixed;
     width: 80%;
+    margin-top: 10px;
     padding-left: 10%;
     padding-right: 10%;
     color: blue;
+    z-index: 100;
 }
 .top h1 {
     background-color: white;
@@ -35,7 +86,17 @@ h1 {
 }
 
 .nav {
+    display: inline-block;
+    position: fixed;
+    top: 100px;
+    left: 10%;
+    background-color: white;
+    padding: 5px;
+}
 
+.nav p {
+    margin: 0px;
+    line-height: auto;
 }
 
 .main-column {
@@ -57,6 +118,11 @@ h1 {
     position: relative;
     overflow: hidden;
     max-width: 720px;
+    transform: rotateY(0deg);
+    transition: transform 0.2s;
+}
+.twitch-embed:hover {
+    transform: skew(-5deg);
 }
 
 .responsive {
@@ -74,6 +140,50 @@ h1 {
     
 }
 
+.images {
+    margin-top: 20px;
+}
+
+.images img {
+    display: inline-block;
+    position: relative;
+    width: 49%;
+    
+}
+
+.path {
+    border: 0px;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    bottom: 20%;
+    font-size: 0;
+}
+
+.path img {
+    display: inline-block;
+    position: relative;
+    width: 15%;
+    padding: 2.5%;
+    vertical-align: bottom;
+}
+
+.pdf iframe{
+    display: inline-block;
+    width: 100%;
+    height: 400px;
+    transition: transform 0.2s;
+}
+
+.pdf iframe:hover{
+    display: inline-block;
+    width: 100%;
+    height: 400px;
+    transform: skew(-4deg);
+}
+
+
+
 @media only screen and (max-width: 720px){
     body {
         font-size: 18px;
@@ -83,5 +193,9 @@ h1 {
         padding-left: 2%;
         padding-right: 2%;
         width: 96%;
+    }
+
+    .nav {
+        left: 2%;
     }
 }
