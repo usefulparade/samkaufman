@@ -177,6 +177,7 @@ img.overlay {
     left: 5%;
     background-color: white;
     padding: 5px;
+    z-index: 200;
 }
 
 .nav p {
