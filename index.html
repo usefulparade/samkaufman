@@ -18,20 +18,8 @@
   
   <div class="bg" id="bg">
     <img class="bg-img" src="img/midterm_poster_bg.jpg">
-    <!-- <img class="bg-triple" src="img/mold_bg.jpg">
-    <img class="bg-triple" src="img/mold_bg.jpg">
-    <img class="bg-triple" src="img/mold_bg.jpg">
-    <img class="bg-triple" src="img/mold_bg.jpg">
-    <img class="bg-triple" src="img/mold_bg.jpg">
-    <img class="bg-triple" src="img/mold_bg.jpg">
-    <img class="bg-triple" src="img/mold_bg.jpg">
-    <img class="bg-triple" src="img/mold_bg.jpg">
-    <img class="bg-triple" src="img/mold_bg.jpg"> -->
-    <!-- <div class="bg-row"> -->
-      <!-- <img class="bg-img" src="img/mold_bg.jpg"> -->
-      <!-- <img class="bg-img" src="img/mold_bg.jpg">
-      <img class="bg-img" src="img/mold_bg.jpg"> -->
-    <!-- </div> -->
+    <img class="bg-img" src="img/midterm_poster_bg.jpg">
+    
   </div>
   <img class="top-left" src="img/top_left.jpg">
   <img class="top-right" src="img/top_right.jpg">
@@ -43,19 +31,18 @@
     <img src="img/path/05.jpg"> 
   </div>
 
+  <div class="sam">
+    <h1 style="position: absolute; float: left;">SAM KAUFMAN</h1>
+  </div>
+
   <div class="top"> 
-      <h1 style="float: left;"><a href="#top">SAM KAUFMAN</a></h1>
-      <h1 style="float: right;" ><a href="javascript:void(0)" onclick="toggleThesis()">COSO HOT SPRINGS</a></h1>
-      <div class="thesis">
-        <p>Sacred Lands, health resort, naval test station, the contingent identities surrounding the Coso Volcanic Range are in a constant state of entropy and fossilization. Tremulous formations and management agencies facilitate the stage for spiritual cleansing, material extraction, and place-making. This new architecture utilizes myself for performative operations found in designing/casting Spolia and Kintsugi. An aesthetic reference for recycling and re-identifying  ruins, geologic forms, and ceramic parts. </p>
-        <br>
-        <p>Although the site is off limits to the public, documentary scenes of the hot springs (archival film, 1930, Somewhere on the  Edge of Nowhere, 2005, Talking Stone, Rock Art of the Cosos, 2014) were collected and interpolated as forensic evidence. By extracting and compositing archival postcards, documentary sequences, USGS Lidar scans, the resulting scenography becomes a means of superimposing history with materiality.</p>
-      </div>
+      
+      <h1 style="float: right;">COSO HOT SPRINGS</h1>
       
       </p>
       <div class="nav">
+        <p><a href="#twitch">Twitch</a></p>
         <p><a href="#about">About</a></p>
-        <p><a href="#twitch-embed">Twitch</a></p>
         <p><a href="#mudpot">Mudpot</a></p>
         <p><a href="#bathhouse">Bathhouse</a></p>
         <p><a href="#hearth">Informal Hearth</a></p>
@@ -66,30 +53,32 @@
   </div>
     
     <div class="main-column">
-
+      
+      
       <div class="content">
+        <h2 id="twitch">TWITCH</h2>
+        <div class="twitch-embed responsive" id="twitch-embed"></div>
         <h2 id="about">ABOUT</h2>
+
       </div>
-
-      <div class="thesis-container">
-        <div class="thesis2">
-
-          <p>Sacred Lands, health resort, naval test station, the contingent identities surrounding the Coso Volcanic Range are in a constant state of entropy and fossilization. Tremulous formations and management agencies facilitate the stage for spiritual cleansing, material extraction, and place-making. This new architecture utilizes myself for performative operations found in designing/casting Spolia and Kintsugi. An aesthetic reference for recycling and re-identifying  ruins, geologic forms, and ceramic parts. </p>
-          <br>
-          <p>Although the site is off limits to the public, documentary scenes of the hot springs (archival film, 1930, Somewhere on the  Edge of Nowhere, 2005, Talking Stone, Rock Art of the Cosos, 2014) were collected and interpolated as forensic evidence. By extracting and compositing archival postcards, documentary sequences, USGS Lidar scans, the resulting scenography becomes a means of superimposing history with materiality.</p>
-        
+  
+        <!-- hi sam! these caption containers work great, but only outside of the <div class="content"> column. so make sure to end that with a </div> before you add a caption, and then start it again afterwards -->
+        <div class="caption-container">
+          <div class="caption layer-top">
+  
+            <p>Sacred Lands, health resort, naval test station, the contingent identities surrounding the Coso Volcanic Range are in a constant state of entropy and fossilization. Tremulous formations and management agencies facilitate the stage for spiritual cleansing, material extraction, and place-making. This new architecture utilizes myself for performative operations found in designing/casting Spolia and Kintsugi. An aesthetic reference for recycling and re-identifying  ruins, geologic forms, and ceramic parts. </p>
+            <br>
+            <p>Although the site is off limits to the public, documentary scenes of the hot springs (archival film, 1930, Somewhere on the  Edge of Nowhere, 2005, Talking Stone, Rock Art of the Cosos, 2014) were collected and interpolated as forensic evidence. By extracting and compositing archival postcards, documentary sequences, USGS Lidar scans, the resulting scenography becomes a means of superimposing history with materiality.</p>
+          
+          </div>
         </div>
-      </div>
 
       <div class="content">
 
-        <div class="pdf>
-          <!-- <h2>ABOUT</h2> -->
+        <div class="pdf">
           <iframe src="img/pdf/Temporary_Visitor_Restrictions_and_Guidelines.pdf#zoom=page-fit"></iframe>
         </div>
 
-        <h2>TWITCH</h2>
-        <div class="twitch-embed responsive" id="twitch-embed"></div>
 
         <div class="content-block" id="mudpot">
           <h2>MUDPOT</h2>
@@ -118,7 +107,7 @@
         </div>
 
         <div class="content-block" id="hearth">
-          <h2>INFORMAL HEARTH</h2>
+          <h2>INFORMAL<br>HEARTH</h2>
           <img class="overlay" src="img/bathhouse/Diagram_02.png">
           <img class="full-width" src="img/hearth/Photo_04_Hearth.png">
           <div class="pdf">
@@ -150,7 +139,7 @@
           </div>
         </div>
 
-        <h2><a href="#top">^ BACK TO TOP ^</a></h2>
+        <p class="backtotop"><a href="#top">^ BACK TO TOP ^</a></p>
 
          <!-- <div class="images" id="hotel">
            <img loading="lazy" src="img/digital-rendering/hotel_01.png">
