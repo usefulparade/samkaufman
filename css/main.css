@@ -21,6 +21,15 @@ h1 {
     margin: 0px;
 }
 
+h2 {
+    font-size: 1em;
+    font-weight: 100;
+    text-align: center;
+    margin: 0px;
+    background: white;
+    color: blue;
+}
+
 .bg {
     display: block;
     position: fixed;
@@ -54,6 +63,21 @@ img.bg-triple {
     margin: 0px;
 }
 
+img.full-width {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+img.overlay {
+    display: block;
+    position: absolute;
+    width: 200%;
+    margin-left: -50%;
+    pointer-events: none;
+}
+
 .top-left {
     display: block;
     position: absolute;
@@ -73,10 +97,10 @@ img.bg-triple {
 .top {
     display: block;
     position: fixed;
-    width: 80%;
+    width: 90%;
     margin-top: 10px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     color: blue;
     z-index: 100;
 }
@@ -88,8 +112,8 @@ img.bg-triple {
 .nav {
     display: inline-block;
     position: fixed;
-    top: 100px;
-    left: 10%;
+    top: 60px;
+    left: 5%;
     background-color: white;
     padding: 5px;
 }
@@ -117,10 +141,36 @@ img.bg-triple {
 
 }
 
+.thesis-container{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 55vh;
+}
+
+.thesis2 {
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    max-height: 50vh;
+    overflow: scroll;
+    background: white;
+    padding: 5px; 
+    transition: max-height 0.2s;
+}
+
+.thesis2 p {
+    color: blue;
+    margin: 0px;
+    
+
+}
+
 .main-column {
     padding-top: 75px;
-    padding-left: 10%;
-    padding-right: 10%;
+    /* padding-left: 10%;
+    padding-right: 10%; */
 }
 
 .content {
@@ -138,6 +188,7 @@ img.bg-triple {
     max-width: 720px;
     transform: rotateY(0deg);
     transition: transform 0.2s;
+    margin-bottom: 30px;
 }
 .twitch-embed:hover {
     transform: skew(-2deg);
@@ -155,7 +206,6 @@ img.bg-triple {
     position: absolute;
     top: 0;
     left: 0;
-    
 }
 
 .images {
@@ -166,7 +216,6 @@ img.bg-triple {
     display: inline-block;
     position: relative;
     width: 49%;
-    
 }
 
 .path {
@@ -191,6 +240,8 @@ img.bg-triple {
     width: 100%;
     height: 400px;
     transition: transform 0.2s;
+    border: 0px;
+    margin-bottom: 30px;
 }
 
 .pdf iframe:hover{
